@@ -1,11 +1,11 @@
 # Autoencoder
 Before started I did not share dataset because I am not sure if I am allowed to share it. Because I got dataset from a challenge. 
 
-I planed this repo first part of a series. In this paper first we talk about “What is Autoencoders” after that I explain how I build a CNN based autoencoder for sign images and share its results.
+I planed this repo to first part of a series. In this paper, firstly “What is Autoencoders” was referred then I explained how I build a CNN based autoencoder for signature images and shared its results.
 
 ## What is Autoencoder?
 
-  An autoencoder is an unsupervised machine learning algorithm which aims to reconstruct  input. Maybe it looks a bit odd when reading it first but algorithm does not simply copy input layer to output layer. As figure 1 represent, algorithm first reduces representation then reconstructs input from reduced representation. This process provides algorithm to capture useful properties in input data. A noteworthy feature of autoencoders is while getting compressed version of input data, noise in input data is removed.
+  An autoencoder is an unsupervised machine learning algorithm which aims to reconstruct  input. It may look a little bit odd when reading it first time but algorithm does not simply copy input layer to output layer. but algorithm does not simply copy input layer to output layer. As figure 1 represent, algorithm first reduces representation then reconstructs input from reduced representation. This process provides algorithm to capture useful properties in input data. A noteworthy feature of autoencoders is while getting compressed version of input data, noise in input data is removed.
 
   First part of model which is input layer to middle layer is named as encoder part and other part of algorithm which is middle layer to output layer is named  as decoder part. Encoded features of input is obtained from middle layer that is also referred as bottleneck.
 

@@ -289,3 +289,19 @@ def retrain(path_to_model, directory, epoch = 5):
                         callbacks=[checkpoint],
                         verbose=1)
     model.save("/content/drive/My Drive/challange_data/re_binary.hdf5")
+    
+def sample_output_generate(model, num_of_sample = 5, directory="/content/drive/My Drive/challange_data/test_data"):
+    dir_list = os.listdir(directory)
+    for i in range(1,2*num_of_sample+1,2):
+        file_name = dir_list[random.randint(0,len(dir_list))]
+        image = cv2.resize(cv2.imread("{}/{}".format(directory, file_name),0), (SHAPE[0], SHAPE[1]), interpolation=cv2.INTER_NEAREST)
+        
+        copy = image.copy()
+
+        image = image.astype(float)/255.
+        res = re_auto.predict(image.reshape((1, 224,224,1)))
+        res = res.reshape((224, 224))*255
+        res = np.array(res, dtype=np.uint8)
+        fig, (ax1, ax2) = plt.subplots(1,2)
+        ax1.imshow(copy,cmap="gray")
+        ax2.imshow(res,cmap="gray")

@@ -23,9 +23,11 @@ A data generator function is coded for generating noise unique data in training 
 
 After preprocess (detailed below) we have a binary structure in our data so sigmoid is output  laye activation function and binary crossentropy is our loss function.
 
+Note: This model trained on Google Colab
+
 **rule of tumb is the total number of training data points should be at least 2 or 3 times larger than number of parameters in neural networks*
 
-##Preporcess
+## Preporcess
 
 Sign images in our dataset only contains 0 or 255 as their pixels  values and every image has  different definations.
 
@@ -35,7 +37,7 @@ Sign images in our dataset only contains 0 or 255 as their pixels  values and ev
 
 After these steps pixels values are 1 or 0.
 
-##Data Generation
+## Data Generation
 
 data_generator funtion first reads images from training dataset then flipping and rotating images (or not) at the end adding pepper input image due to add noise. As we mentioned the main purposes of autoencoders are removing noise in training data and dimentionality reduction. Therefore adding noise is important for our autoencoder to gain ability to remove noise. 
 

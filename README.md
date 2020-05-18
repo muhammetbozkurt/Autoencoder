@@ -1,5 +1,5 @@
 # Autoencoder
-Before started I did share dataset because I am not sure if I am allowed to share it. Because I got dataset from a challenge. 
+Before started I did not share dataset because I am not sure if I am allowed to share it. Because I got dataset from a challenge. 
 
 I planed this repo first part of a series. In this paper first we talk about “What is Autoencoders” after that I explain how I build a CNN based autoencoder for sign images and share its results.
 

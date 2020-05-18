@@ -1,7 +1,7 @@
 # Autoencoder
 Before started I did not share dataset because I am not sure if I am allowed to share it. Because I got dataset from a challenge. 
 
-I planed this repo to first part of a series. In this paper, firstly “What is Autoencoders” was referred then I explained how I build a CNN based autoencoder for signature images and shared its results.
+I planed this repo as first part of a series. In this paper, firstly “What is Autoencoders” was answered then I explained how I build a CNN based autoencoder for signature images and showed its results.
 
 ## What is Autoencoder?
 
